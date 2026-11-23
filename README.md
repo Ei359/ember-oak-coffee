@@ -4,31 +4,33 @@ Ember & Oak Coffee is a coffee shopping website I built using HTML, CSS, and Jav
 
 I built it around a simple online shopping experience. Visitors can explore the product collections, search for items they are interested in, add products to their cart, and adjust quantities before reviewing their order. I also included an events page and a special offers section to make the website feel more like a complete coffee shop experience.
 
+
+
 ## Website Preview
 
 ### 1. Home Page
 
 The homepage introduces Ember & Oak Coffee, with a main banner, featured product cards, and links to the coffee and equipment collections. It provides a starting point for exploring the website.
 
-![Ember and Oak Coffee homepage](screenshots/homepage.png)
+![Ember and Oak Coffee homepage](screenshots/01-home.png)
 
 ### 2. Explore Coffee Beans
 
 Browse six coffee varieties, including Arabica, Robusta, Liberica, Ethiopian Yirgacheffe, Guatemalan Antigua, and Sumatran Dark Roast. Each product includes an image, description, price, and search functionality.
 
-![Coffee collection showing different coffee bean products](screenshots/coffee-page.png)
+![Coffee collection showing different coffee bean products](screenshots/02-coffee.png)
 
 ### 3. Explore Brewing Equipment
 
 Browse six brewing products, including French Press, Espresso Machine, Pour Over Kit, AeroPress, Cold Brew Maker, and Moka Pot. Each card provides product information and an option to add the item to the shopping cart.
 
-![Brewing equipment product collection](screenshots/equipment-page.png)
+![Brewing equipment product collection](screenshots/03-equipment.png)
 
 ### 4. Manage the Shopping Cart
 
 Add products to the cart, increase or decrease quantities, and remove items. The cart displays the selected products and updates the order total as quantities change. Cart information is saved using browser local storage.
 
-![Shopping cart showing selected products and quantity controls](screenshots/cart.png)
+![Shopping cart showing selected products and quantity controls](screenshots/04-cart.png)
 
 ## Features
 
