@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offers | Ember &amp; Oak Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="image/coffee-logo.jpg" alt="Coffee logo">
+        <span>Ember &amp; Oak Coffee</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="cart.html">Cart</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html" class="active"
+           aria-current="page">Offers</a>
+      </nav>
+
+      <a class="cart-link" href="cart.html">
+        Cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">
+      Special Offers &amp; Subscriptions
+    </h1>
+
+    <p class="section-intro">
+      Explore promotions and subscription ideas
+      for everyday coffee lovers.
+    </p>
+
+    <div class="notice-box">
+      These are sample promotions and plans.
+      Only WELCOME15 works as a demo cart discount.
+    </div>
+
+    <!-- SPECIAL PROMOTIONS -->
+    <section class="section">
+      <h2 class="section-title">Special Promotions</h2>
+      <p class="section-intro">
+        Discover ways to get more from your coffee experience.
+      </p>
+
+      <div class="offers-grid">
+        <article class="offer-card">
+          <img src="image/buy 1 get 1.avif"
+               alt="Buy one get one coffee offer"
+               loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>
+              A sample promotion featuring selected
+              coffee beans and special gifts.
+            </p>
+            <p class="small-note">
+              Example offer only. Not active.
+            </p>
+            <a href="coffee.html" class="button button-small">
+              Explore Coffee
+            </a>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="image/moka-pot.jpg"
+               alt="Coffee equipment" loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>Free Grinder with Subscription</h3>
+            <p>
+              A sample subscription promotion
+              with a complimentary accessory.
+            </p>
+            <p class="small-note">
+              Example offer only. Not active.
+            </p>
+            <a href="#subscriptionPlans"
+               class="button button-small">
+              View Plans
+            </a>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="image/premium.jpg"
+               alt="Premium coffee" loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>15% Welcome Discount</h3>
+            <p>
+              Enter <strong>WELCOME15</strong>
+              in your shopping cart to test
+              a working demo discount.
+            </p>
+            <a href="cart.html" class="button button-small">
+              Apply in Cart
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SUBSCRIPTION PLANS -->
+    <section class="section" id="subscriptionPlans">
+      <h2 class="section-title">
+        Coffee Subscription Plans
+      </h2>
+      <p class="section-intro">
+        Explore sample plans for a regular coffee routine.
+      </p>
+
+      <div class="offers-grid">
+        <article class="offer-card">
+          <img src="image/basic.webp"
+               alt="Basic subscription" loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>Basic Plan</h3>
+            <p>For casual coffee lovers.</p>
+            <ul>
+              <li>1 bag of coffee per month</li>
+              <li>Free shipping</li>
+              <li>10% accessory discount</li>
+            </ul>
+            <p class="small-note">Sample plan only.</p>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="image/premium.jpg"
+               alt="Premium subscription" loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>Premium Plan</h3>
+            <p>For those who enjoy exploring new flavors.</p>
+            <ul>
+              <li>2 bags of coffee per month</li>
+              <li>Priority shipping</li>
+              <li>Free coffee samples</li>
+            </ul>
+            <p class="small-note">Sample plan only.</p>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="image/elite.webp"
+               alt="Elite subscription" loading="lazy">
+
+          <div class="offer-card-content">
+            <h3>Elite Plan</h3>
+            <p>For passionate coffee enthusiasts.</p>
+            <ul>
+              <li>4 bags of coffee per month</li>
+              <li>Exclusive roast samples</li>
+              <li>Special accessory perks</li>
+            </ul>
+            <p class="small-note">Sample plan only.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ADVANCED FOOTER -->
+  <footer class="eo-footer">
+    <div class="eo-footer-inner">
+      <div class="eo-footer-feature">
+        <div>
+          <p class="eo-footer-kicker">Your coffee journey</p>
+          <h2>Something good starts with coffee.</h2>
+          <p>
+            Explore fresh flavors, brewing essentials
+            and new ways to enjoy your daily cup.
+          </p>
+        </div>
+        <a href="coffee.html" class="eo-footer-cta">
+          Explore Our Coffee
+        </a>
+      </div>
+
+      <div class="eo-footer-grid">
+        <section class="eo-footer-about">
+          <div class="eo-footer-brand">
+            <span class="eo-footer-logo"
+                  aria-hidden="true">E&amp;O</span>
+            <a href="index.html" class="eo-footer-brand-name">
+              Ember &amp; Oak Coffee
+            </a>
+          </div>
+          <p class="eo-footer-description">
+            Good coffee, thoughtfully chosen.
+            Explore coffee beans, useful brewing tools
+            and experiences for curious coffee lovers.
+          </p>
+        </section>
+
+        <nav aria-label="Footer shop navigation">
+          <h2 class="eo-footer-title">Shop</h2>
+          <div class="eo-footer-links">
+            <a href="coffee.html">Coffee Beans</a>
+            <a href="equipment.html">Brewing Equipment</a>
+            <a href="cart.html">
+              My Cart
+              <span class="eo-footer-cart-count"
+                    data-cart-count>0</span>
+            </a>
+            <a href="offers.html">Special Offers</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Footer explore navigation">
+          <h2 class="eo-footer-title">Explore</h2>
+          <div class="eo-footer-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events &amp; Workshops</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="#top">Back to Top</a>
+          </div>
+        </nav>
+
+        <section class="eo-footer-newsletter">
+          <h2 class="eo-footer-title">Stay in the Loop</h2>
+          <p>
+            Preview our newsletter signup.
+            This is a demonstration only.
+          </p>
+          <label for="footerEmail"
+                 class="eo-newsletter-label">
+            Email Address
+          </label>
+          <div class="eo-newsletter-controls">
+            <input id="footerEmail"
+                   class="eo-newsletter-input"
+                   type="email"
+                   placeholder="you@example.com"
+                   required
+                   data-newsletter-input>
+            <button type="button"
+                    class="eo-newsletter-button"
+                    data-newsletter-button>
+              Try It
+            </button>
+          </div>
+          <p class="eo-newsletter-status"
+             data-newsletter-status
+             role="status" aria-live="polite">
+            No emails are sent or stored.
+          </p>
+        </section>
+      </div>
+
+      <div class="eo-footer-bottom">
+        <p>
+          &copy; <span data-footer-year>2026</span>
+          Ember &amp; Oak Coffee. All rights reserved.
+        </p>
+        <p>Frontend demonstration website</p>
+        <a href="#top" class="eo-footer-backtop">
+          ↑ Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

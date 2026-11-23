@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Ember &amp; Oak Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="image/coffee-logo.jpg" alt="Coffee logo">
+        <span>Ember &amp; Oak Coffee</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="cart.html">Cart</a>
+        <a href="events.html" class="active"
+           aria-current="page">Events</a>
+        <a href="offers.html">Offers</a>
+      </nav>
+
+      <a class="cart-link" href="cart.html">
+        Cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">
+      Coffee Events &amp; Workshops
+    </h1>
+
+    <p class="section-intro">
+      Discover coffee tasting and brewing experiences
+      designed for coffee enthusiasts.
+    </p>
+
+    <div class="notice-box">
+      These are example events for this frontend
+      portfolio website, not confirmed bookings.
+    </div>
+
+    <!-- EVENT CARDS -->
+    <section class="event-grid" style="margin-top:25px"
+             aria-label="Coffee workshop ideas">
+
+      <article class="event-card">
+        <img src="image/coffee-tasting.avif"
+             alt="Coffee tasting session" loading="lazy">
+        <div class="event-card-content">
+          <h3>Coffee Tasting Session</h3>
+          <p>
+            Discover different coffee aromas,
+            flavors and tasting techniques.
+          </p>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <img src="image/hands-pour-over.jpg"
+             alt="Pour-over coffee brewing" loading="lazy">
+        <div class="event-card-content">
+          <h3>Brewing Techniques Class</h3>
+          <p>
+            Learn practical pour-over, French press
+            and cold brew techniques.
+          </p>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <img src="image/meet-roaster.jpg"
+             alt="Coffee roasting demonstration" loading="lazy">
+        <div class="event-card-content">
+          <h3>Meet the Roaster</h3>
+          <p>
+            Explore how coffee roasting brings out
+            unique aromas and flavors.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- EVENT FORM -->
+    <section class="registration-card">
+      <h2>Demo Event Registration</h2>
+
+      <p class="small-note">
+        This form demonstrates input validation.
+        No details are submitted or saved.
+      </p>
+
+      <form id="eventForm">
+        <label class="form-field" for="firstName">
+          First Name
+          <input id="firstName" class="input"
+                 name="firstName" type="text"
+                 maxlength="60" required>
+        </label>
+
+        <label class="form-field" for="lastName">
+          Last Name
+          <input id="lastName" class="input"
+                 name="lastName" type="text"
+                 maxlength="60" required>
+        </label>
+
+        <label class="form-field" for="eventEmail">
+          Email Address
+          <input id="eventEmail" class="input"
+                 name="email" type="email" required>
+        </label>
+
+        <label class="form-field" for="eventSelect">
+          Select Workshop
+          <select id="eventSelect" class="input"
+                  name="workshop" required>
+            <option value="">Choose a workshop</option>
+            <option value="tasting">
+              Coffee Tasting Session
+            </option>
+            <option value="brewing">
+              Brewing Techniques Class
+            </option>
+            <option value="roaster">
+              Meet the Roaster
+            </option>
+          </select>
+        </label>
+
+        <button type="submit" class="button">
+          Submit Demo Registration
+        </button>
+
+        <p id="eventMessage" class="status-message"
+           role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ADVANCED FOOTER -->
+  <footer class="eo-footer">
+    <div class="eo-footer-inner">
+      <div class="eo-footer-feature">
+        <div>
+          <p class="eo-footer-kicker">Your coffee journey</p>
+          <h2>Something good starts with coffee.</h2>
+          <p>
+            Explore fresh flavors, brewing essentials
+            and new ways to enjoy your daily cup.
+          </p>
+        </div>
+        <a href="coffee.html" class="eo-footer-cta">
+          Explore Our Coffee
+        </a>
+      </div>
+
+      <div class="eo-footer-grid">
+        <section class="eo-footer-about">
+          <div class="eo-footer-brand">
+            <span class="eo-footer-logo"
+                  aria-hidden="true">E&amp;O</span>
+            <a href="index.html" class="eo-footer-brand-name">
+              Ember &amp; Oak Coffee
+            </a>
+          </div>
+          <p class="eo-footer-description">
+            Good coffee, thoughtfully chosen.
+            Explore coffee beans, useful brewing tools
+            and experiences for curious coffee lovers.
+          </p>
+        </section>
+
+        <nav aria-label="Footer shop navigation">
+          <h2 class="eo-footer-title">Shop</h2>
+          <div class="eo-footer-links">
+            <a href="coffee.html">Coffee Beans</a>
+            <a href="equipment.html">Brewing Equipment</a>
+            <a href="cart.html">
+              My Cart
+              <span class="eo-footer-cart-count"
+                    data-cart-count>0</span>
+            </a>
+            <a href="offers.html">Special Offers</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Footer explore navigation">
+          <h2 class="eo-footer-title">Explore</h2>
+          <div class="eo-footer-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events &amp; Workshops</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="#top">Back to Top</a>
+          </div>
+        </nav>
+
+        <section class="eo-footer-newsletter">
+          <h2 class="eo-footer-title">Stay in the Loop</h2>
+          <p>
+            Preview our newsletter signup.
+            This is a demonstration only.
+          </p>
+          <label for="footerEmail"
+                 class="eo-newsletter-label">
+            Email Address
+          </label>
+          <div class="eo-newsletter-controls">
+            <input id="footerEmail"
+                   class="eo-newsletter-input"
+                   type="email"
+                   placeholder="you@example.com"
+                   required
+                   data-newsletter-input>
+            <button type="button"
+                    class="eo-newsletter-button"
+                    data-newsletter-button>
+              Try It
+            </button>
+          </div>
+          <p class="eo-newsletter-status"
+             data-newsletter-status
+             role="status" aria-live="polite">
+            No emails are sent or stored.
+          </p>
+        </section>
+      </div>
+
+      <div class="eo-footer-bottom">
+        <p>
+          &copy; <span data-footer-year>2026</span>
+          Ember &amp; Oak Coffee. All rights reserved.
+        </p>
+        <p>Frontend demonstration website</p>
+        <a href="#top" class="eo-footer-backtop">
+          ↑ Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

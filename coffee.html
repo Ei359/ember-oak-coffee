@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee | Ember &amp; Oak Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="image/coffee-bean-logo.jpg" alt="Coffee logo">
+        <span>Ember &amp; Oak Coffee</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html" class="active"
+           aria-current="page">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="cart.html">Cart</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+      </nav>
+      <a class="cart-link" href="cart.html">
+        Cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalogue-heading">
+      <p class="eyebrow centered">Freshly Selected</p>
+      <h1>Our Signature Coffee Beans</h1>
+      <p class="section-intro">
+        Discover six unique coffee beans, from smooth
+        and floral to rich and bold.
+      </p>
+
+      <div class="search-row">
+        <label for="productSearch">Search Coffee Beans</label>
+        <input id="productSearch" class="input"
+               type="search"
+               placeholder="Search coffee by name or flavor">
+      </div>
+    </section>
+
+    <p id="cartNotice" class="status-message"
+       role="status" aria-live="polite"></p>
+
+    <section id="productGrid" class="product-grid"
+             aria-label="Coffee products">
+
+      <!-- ARABICA -->
+      <article class="product-card">
+        <img src="image/arabica.jpg" alt="Arabica Beans"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Arabica Beans</h3>
+          <p>Smooth and sweet with floral notes.</p>
+          <p class="product-detail">
+            Best for pour-over or French press.
+          </p>
+          <div class="product-bottom">
+            <strong>$12.99 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="arabica">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ROBUSTA -->
+      <article class="product-card">
+        <img src="image/robusta.jpg" alt="Robusta Beans"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Robusta Beans</h3>
+          <p>Bold, earthy coffee with a strong finish.</p>
+          <p class="product-detail">
+            Best for espresso or Moka pot.
+          </p>
+          <div class="product-bottom">
+            <strong>$10.50 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="robusta">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- LIBERICA -->
+      <article class="product-card">
+        <img src="image/liberica.jpg" alt="Liberica Beans"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Liberica Beans</h3>
+          <p>Rare beans with fruity, woody aromas.</p>
+          <p class="product-detail">
+            Best for French press or cold brew.
+          </p>
+          <div class="product-bottom">
+            <strong>$13.75 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="liberica">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ETHIOPIAN -->
+      <article class="product-card">
+        <img src="image/ethiopian.jpg"
+             alt="Ethiopian Yirgacheffe" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Ethiopian Yirgacheffe</h3>
+          <p>Bright citrus, jasmine and tea-like notes.</p>
+          <p class="product-detail">
+            Best for pour-over.
+          </p>
+          <div class="product-bottom">
+            <strong>$14.25 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="ethiopian">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- GUATEMALAN -->
+      <article class="product-card">
+        <img src="image/guatemala-antigua.png"
+             alt="Guatemalan Antigua" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Guatemalan Antigua</h3>
+          <p>Chocolate, cinnamon and nutty notes.</p>
+          <p class="product-detail">
+            Best for drip coffee or French press.
+          </p>
+          <div class="product-bottom">
+            <strong>$13.40 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="guatemalan">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- SUMATRAN -->
+      <article class="product-card">
+        <img src="image/sumatran-roast.jpg"
+             alt="Sumatran Dark Roast" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Coffee Beans</p>
+          <h3>Sumatran Dark Roast</h3>
+          <p>Deep roast with earthy, smoky flavors.</p>
+          <p class="product-detail">
+            Best for espresso or French press.
+          </p>
+          <div class="product-bottom">
+            <strong>$11.99 / 250g</strong>
+            <button class="button button-small"
+                    type="button" data-add="sumatran">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p id="noProducts" class="empty-message" hidden>
+      No coffee products match your search.
+    </p>
+  </main>
+
+  <footer class="eo-footer">
+    <div class="eo-footer-inner">
+      <div class="eo-footer-feature">
+        <div>
+          <p class="eo-footer-kicker">Your coffee journey</p>
+          <h2>Something good starts with coffee.</h2>
+          <p>
+            Explore fresh flavors, brewing essentials
+            and new ways to enjoy your daily cup.
+          </p>
+        </div>
+        <a href="coffee.html" class="eo-footer-cta">
+          Explore Our Coffee
+        </a>
+      </div>
+
+      <div class="eo-footer-grid">
+        <section class="eo-footer-about">
+          <div class="eo-footer-brand">
+            <span class="eo-footer-logo"
+                  aria-hidden="true">E&amp;O</span>
+            <a href="index.html" class="eo-footer-brand-name">
+              Ember &amp; Oak Coffee
+            </a>
+          </div>
+          <p class="eo-footer-description">
+            Good coffee, thoughtfully chosen.
+            Explore coffee beans, useful brewing tools
+            and experiences for curious coffee lovers.
+          </p>
+        </section>
+
+        <nav aria-label="Footer shop navigation">
+          <h2 class="eo-footer-title">Shop</h2>
+          <div class="eo-footer-links">
+            <a href="coffee.html">Coffee Beans</a>
+            <a href="equipment.html">Brewing Equipment</a>
+            <a href="cart.html">
+              My Cart
+              <span class="eo-footer-cart-count"
+                    data-cart-count>0</span>
+            </a>
+            <a href="offers.html">Special Offers</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Footer explore navigation">
+          <h2 class="eo-footer-title">Explore</h2>
+          <div class="eo-footer-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events &amp; Workshops</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="#top">Back to Top</a>
+          </div>
+        </nav>
+
+        <section class="eo-footer-newsletter">
+          <h2 class="eo-footer-title">Stay in the Loop</h2>
+          <p>
+            Preview our newsletter signup.
+            This is a demonstration only.
+          </p>
+          <label for="footerEmail"
+                 class="eo-newsletter-label">Email Address</label>
+          <div class="eo-newsletter-controls">
+            <input id="footerEmail"
+                   class="eo-newsletter-input"
+                   type="email"
+                   placeholder="you@example.com"
+                   required
+                   data-newsletter-input>
+            <button type="button"
+                    class="eo-newsletter-button"
+                    data-newsletter-button>
+              Try It
+            </button>
+          </div>
+          <p class="eo-newsletter-status"
+             data-newsletter-status
+             role="status" aria-live="polite">
+            No emails are sent or stored.
+          </p>
+        </section>
+      </div>
+
+      <div class="eo-footer-bottom">
+        <p>
+          &copy; <span data-footer-year>2026</span>
+          Ember &amp; Oak Coffee. All rights reserved.
+        </p>
+        <p>Frontend demonstration website</p>
+        <a href="#top" class="eo-footer-backtop">
+          ↑ Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

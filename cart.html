@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Ember &amp; Oak Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="image/coffee-logo.jpg" alt="Coffee logo">
+        <span>Ember &amp; Oak Coffee</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="cart.html" class="active"
+           aria-current="page">Cart</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+      </nav>
+
+      <a class="cart-link" href="cart.html">
+        Cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- SHOPPING CART -->
+  <main class="container">
+    <section class="catalogue-heading">
+      <h1>Your Shopping Cart</h1>
+      <p class="section-intro">
+        Review your products, update quantities
+        and calculate your order total.
+      </p>
+    </section>
+
+    <div class="cart-layout">
+      <!-- CART ITEMS -->
+      <section aria-label="Shopping cart items">
+        <div id="cartItems" class="cart-list">
+          <p class="empty-message">
+            Your cart is empty.
+            <a href="coffee.html">Shop Coffee</a>
+            or
+            <a href="equipment.html">Shop Equipment</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- ORDER SUMMARY -->
+      <aside class="summary-card">
+        <h2>Order Summary</h2>
+
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="subtotalValue">$0.00</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Discount</span>
+          <span id="discountValue">−$0.00</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Demo Tax (5%)</span>
+          <span id="taxValue">$0.00</span>
+        </div>
+
+        <div class="summary-line total">
+          <span>Total</span>
+          <span id="totalValue">$0.00</span>
+        </div>
+
+        <!-- PROMO CODE -->
+        <label class="form-field" for="promoInput">
+          Promo Code
+        </label>
+
+        <div class="promo-box">
+          <input
+            class="input"
+            id="promoInput"
+            type="text"
+            placeholder="WELCOME15"
+            autocomplete="off"
+          >
+
+          <button
+            id="applyPromo"
+            class="button button-small"
+            type="button"
+          >
+            Apply
+          </button>
+        </div>
+
+        <button
+          id="removePromo"
+          class="text-button"
+          type="button"
+        >
+          Remove Promo Code
+        </button>
+
+        <p
+          id="promoMessage"
+          class="small-note"
+          role="status"
+          aria-live="polite"
+        >
+          Use WELCOME15 for a 15% demo discount.
+        </p>
+
+        <!-- CHECKOUT -->
+        <button
+          id="checkoutButton"
+          class="button checkout-button"
+          type="button"
+          disabled
+        >
+          Proceed to Checkout
+        </button>
+
+        <p class="small-note">
+          Demo checkout only. No real order
+          or payment is processed.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ADVANCED FOOTER -->
+  <footer class="eo-footer">
+    <div class="eo-footer-inner">
+      <div class="eo-footer-feature">
+        <div>
+          <p class="eo-footer-kicker">Your coffee journey</p>
+          <h2>Something good starts with coffee.</h2>
+          <p>
+            Explore fresh flavors, brewing essentials
+            and new ways to enjoy your daily cup.
+          </p>
+        </div>
+        <a href="coffee.html" class="eo-footer-cta">
+          Explore Our Coffee
+        </a>
+      </div>
+
+      <div class="eo-footer-grid">
+        <section class="eo-footer-about">
+          <div class="eo-footer-brand">
+            <span class="eo-footer-logo"
+                  aria-hidden="true">E&amp;O</span>
+            <a href="index.html" class="eo-footer-brand-name">
+              Ember &amp; Oak Coffee
+            </a>
+          </div>
+          <p class="eo-footer-description">
+            Good coffee, thoughtfully chosen.
+            Explore coffee beans, useful brewing tools
+            and experiences for curious coffee lovers.
+          </p>
+        </section>
+
+        <nav aria-label="Footer shop navigation">
+          <h2 class="eo-footer-title">Shop</h2>
+          <div class="eo-footer-links">
+            <a href="coffee.html">Coffee Beans</a>
+            <a href="equipment.html">Brewing Equipment</a>
+            <a href="cart.html">
+              My Cart
+              <span class="eo-footer-cart-count"
+                    data-cart-count>0</span>
+            </a>
+            <a href="offers.html">Special Offers</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Footer explore navigation">
+          <h2 class="eo-footer-title">Explore</h2>
+          <div class="eo-footer-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events &amp; Workshops</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="#top">Back to Top</a>
+          </div>
+        </nav>
+
+        <section class="eo-footer-newsletter">
+          <h2 class="eo-footer-title">Stay in the Loop</h2>
+          <p>
+            Preview our newsletter signup.
+            This is a demonstration only.
+          </p>
+          <label for="footerEmail"
+                 class="eo-newsletter-label">
+            Email Address
+          </label>
+          <div class="eo-newsletter-controls">
+            <input id="footerEmail"
+                   class="eo-newsletter-input"
+                   type="email"
+                   placeholder="you@example.com"
+                   required
+                   data-newsletter-input>
+            <button type="button"
+                    class="eo-newsletter-button"
+                    data-newsletter-button>
+              Try It
+            </button>
+          </div>
+          <p class="eo-newsletter-status"
+             data-newsletter-status
+             role="status" aria-live="polite">
+            No emails are sent or stored.
+          </p>
+        </section>
+      </div>
+
+      <div class="eo-footer-bottom">
+        <p>
+          &copy; <span data-footer-year>2026</span>
+          Ember &amp; Oak Coffee. All rights reserved.
+        </p>
+        <p>Frontend demonstration website</p>
+        <a href="#top" class="eo-footer-backtop">
+          ↑ Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment | Ember &amp; Oak Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="image/coffee-brewing-logo.avif"
+             alt="Coffee equipment logo">
+        <span>Ember &amp; Oak Coffee</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html" class="active"
+           aria-current="page">Equipment</a>
+        <a href="cart.html">Cart</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+      </nav>
+      <a class="cart-link" href="cart.html">
+        Cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalogue-heading">
+      <p class="eyebrow centered">Brew Better at Home</p>
+      <h1>Brewing Equipment</h1>
+      <p class="section-intro">
+        Discover the tools you need to make
+        your perfect cup of coffee.
+      </p>
+
+      <div class="search-row">
+        <label for="productSearch">Search Equipment</label>
+        <input id="productSearch" class="input"
+               type="search"
+               placeholder="Search equipment by name">
+      </div>
+    </section>
+
+    <p id="cartNotice" class="status-message"
+       role="status" aria-live="polite"></p>
+
+    <section id="productGrid" class="product-grid"
+             aria-label="Equipment products">
+
+      <!-- FRENCH PRESS -->
+      <article class="product-card">
+        <img src="image/french-press.jpg" alt="French Press"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>French Press</h3>
+          <p>Classic press for full-bodied coffee.</p>
+          <p class="product-detail">
+            Steep for about 4 minutes before pressing.
+          </p>
+          <div class="product-bottom">
+            <strong>$29.99</strong>
+            <button class="button button-small"
+                    type="button" data-add="french-press">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ESPRESSO MACHINE -->
+      <article class="product-card">
+        <img src="image/espresso machine.jpg"
+             alt="Espresso Machine" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>Espresso Machine</h3>
+          <p>Make rich espresso at home.</p>
+          <p class="product-detail">
+            Use finely ground coffee and tamp evenly.
+          </p>
+          <div class="product-bottom">
+            <strong>$149.00</strong>
+            <button class="button button-small"
+                    type="button" data-add="espresso-machine">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- POUR OVER -->
+      <article class="product-card">
+        <img src="image/pour-over-kit.jpg"
+             alt="Pour Over Kit" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>Pour Over Kit</h3>
+          <p>A simple setup for balanced manual brewing.</p>
+          <p class="product-detail">
+            Pour water slowly in circles.
+          </p>
+          <div class="product-bottom">
+            <strong>$34.50</strong>
+            <button class="button button-small"
+                    type="button" data-add="pour-over">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- AEROPRESS -->
+      <article class="product-card">
+        <img src="image/AeroPress.png" alt="AeroPress"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>AeroPress</h3>
+          <p>Compact, versatile and travel-friendly.</p>
+          <p class="product-detail">
+            Experiment with brew time and grind size.
+          </p>
+          <div class="product-bottom">
+            <strong>$39.00</strong>
+            <button class="button button-small"
+                    type="button" data-add="aeropress">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLD BREW -->
+      <article class="product-card">
+        <img src="image/cold-brew.jfif"
+             alt="Cold Brew Maker" loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>Cold Brew Maker</h3>
+          <p>Prepare smooth and refreshing cold brew.</p>
+          <p class="product-detail">
+            Steep in the refrigerator for 12–24 hours.
+          </p>
+          <div class="product-bottom">
+            <strong>$45.99</strong>
+            <button class="button button-small"
+                    type="button" data-add="cold-brew">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- MOKA POT -->
+      <article class="product-card">
+        <img src="image/moka-pot.jpg" alt="Moka Pot"
+             loading="lazy">
+        <div class="product-info">
+          <p class="eyebrow">Brewing Equipment</p>
+          <h3>Moka Pot</h3>
+          <p>Traditional stovetop coffee maker.</p>
+          <p class="product-detail">
+            Use medium heat and remove once it bubbles.
+          </p>
+          <div class="product-bottom">
+            <strong>$24.95</strong>
+            <button class="button button-small"
+                    type="button" data-add="moka-pot">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p id="noProducts" class="empty-message" hidden>
+      No equipment matches your search.
+    </p>
+  </main>
+
+  <!-- ADVANCED FOOTER -->
+  <footer class="eo-footer">
+    <div class="eo-footer-inner">
+      <div class="eo-footer-feature">
+        <div>
+          <p class="eo-footer-kicker">Your coffee journey</p>
+          <h2>Something good starts with coffee.</h2>
+          <p>
+            Explore fresh flavors, brewing essentials
+            and new ways to enjoy your daily cup.
+          </p>
+        </div>
+        <a href="coffee.html" class="eo-footer-cta">
+          Explore Our Coffee
+        </a>
+      </div>
+
+      <div class="eo-footer-grid">
+        <section class="eo-footer-about">
+          <div class="eo-footer-brand">
+            <span class="eo-footer-logo"
+                  aria-hidden="true">E&amp;O</span>
+            <a href="index.html" class="eo-footer-brand-name">
+              Ember &amp; Oak Coffee
+            </a>
+          </div>
+          <p class="eo-footer-description">
+            Good coffee, thoughtfully chosen.
+            Explore coffee beans, useful brewing tools
+            and experiences for curious coffee lovers.
+          </p>
+        </section>
+
+        <nav aria-label="Footer shop navigation">
+          <h2 class="eo-footer-title">Shop</h2>
+          <div class="eo-footer-links">
+            <a href="coffee.html">Coffee Beans</a>
+            <a href="equipment.html">Brewing Equipment</a>
+            <a href="cart.html">
+              My Cart
+              <span class="eo-footer-cart-count"
+                    data-cart-count>0</span>
+            </a>
+            <a href="offers.html">Special Offers</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Footer explore navigation">
+          <h2 class="eo-footer-title">Explore</h2>
+          <div class="eo-footer-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events &amp; Workshops</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="#top">Back to Top</a>
+          </div>
+        </nav>
+
+        <section class="eo-footer-newsletter">
+          <h2 class="eo-footer-title">Stay in the Loop</h2>
+          <p>
+            Preview our newsletter signup.
+            This is a demonstration only.
+          </p>
+          <label for="footerEmail"
+                 class="eo-newsletter-label">Email Address</label>
+          <div class="eo-newsletter-controls">
+            <input id="footerEmail"
+                   class="eo-newsletter-input"
+                   type="email"
+                   placeholder="you@example.com"
+                   required
+                   data-newsletter-input>
+            <button type="button"
+                    class="eo-newsletter-button"
+                    data-newsletter-button>
+              Try It
+            </button>
+          </div>
+          <p class="eo-newsletter-status"
+             data-newsletter-status
+             role="status" aria-live="polite">
+            No emails are sent or stored.
+          </p>
+        </section>
+      </div>
+
+      <div class="eo-footer-bottom">
+        <p>
+          &copy; <span data-footer-year>2026</span>
+          Ember &amp; Oak Coffee. All rights reserved.
+        </p>
+        <p>Frontend demonstration website</p>
+        <a href="#top" class="eo-footer-backtop">
+          ↑ Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
