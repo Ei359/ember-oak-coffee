@@ -4,7 +4,7 @@ Ember & Oak Coffee is a coffee shopping website I built using HTML, CSS, and Jav
 
 I built it around a simple online shopping experience. Visitors can explore the product collections, search for items they are interested in, add products to their cart, and adjust quantities before reviewing their order. I also included an events page and a special offers section to make the website feel more like a complete coffee shop experience.
 
-
+[View the Live Ember & Oak Coffee Website](https://ember-oak-coffee-chi.vercel.app/)
 
 ## Website Preview
 
@@ -127,36 +127,36 @@ Add products to the cart, increase or decrease quantities, and remove items. The
 8. Visit **Events** to explore workshops and test the registration form.
 9. Open **Offers** to view the promotional concepts and subscription plans.
 
+
 ## Project Structure
 
 ```text
 ember-oak-coffee/
 │
-├── index.html
-├── coffee.html
-├── equipment.html
-├── cart.html
-├── events.html
-├── offers.html
-│
 ├── css/
-│   ├── style.css
-│   └── footer.css
-│
-├── js/
-│   ├── products.js
-│   ├── main.js
-│   └── footer.js
+│   ├── footer.css
+│   └── style.css
 │
 ├── image/
 │   └── Website images
 │
-├── screenshots/
-│   ├── homepage.png
-│   ├── coffee-page.png
-│   ├── equipment-page.png
-│   └── cart.png
+├── js/
+│   ├── footer.js
+│   ├── main.js
+│   └── products.js
 │
+├── screenshots/
+│   ├── 01-home.png
+│   ├── 02-coffee.png
+│   ├── 03-equipment.png
+│   └── 04-cart.png
+│
+├── cart.html
+├── coffee.html
+├── equipment.html
+├── events.html
+├── index.html
+├── offers.html
 └── README.md
 ```
 

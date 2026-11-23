@@ -5,6 +5,8 @@
    Advanced footer: css/footer.css
 =============================================== */
 
+/* COLORS */
+
 :root {
   --coffee: #33241c;
   --coffee-light: #654936;
@@ -19,7 +21,9 @@
   --shadow-hover: 0 14px 35px rgba(50, 29, 17, 0.12);
 }
 
-/* GLOBAL */
+/* ===============================================
+   GLOBAL
+=============================================== */
 
 *,
 *::before,
@@ -110,7 +114,9 @@ button:disabled {
   text-transform: uppercase;
 }
 
-/* HEADER */
+/* ===============================================
+   HEADER AND NAVIGATION
+=============================================== */
 
 .site-header {
   position: relative;
@@ -187,7 +193,9 @@ button:disabled {
   font-size: 0.8rem;
 }
 
-/* BUTTONS */
+/* ===============================================
+   BUTTONS
+=============================================== */
 
 .button {
   display: inline-flex;
@@ -236,7 +244,9 @@ button:disabled {
   text-decoration: underline;
 }
 
-/* FORMS */
+/* ===============================================
+   FORMS
+=============================================== */
 
 .input,
 select.input {
@@ -275,7 +285,9 @@ select.input {
   font-size: 0.85rem;
 }
 
-/* SHARED CARD GRIDS */
+/* ===============================================
+   SHARED CARD GRIDS
+=============================================== */
 
 .feature-grid,
 .product-grid,
@@ -326,7 +338,9 @@ select.input {
   color: var(--muted);
 }
 
-/* COFFEE AND EQUIPMENT PAGES */
+/* ===============================================
+   COFFEE AND EQUIPMENT PAGES
+=============================================== */
 
 .catalogue-heading {
   padding: 45px 0 10px;
@@ -424,7 +438,9 @@ select.input {
   font-weight: 700;
 }
 
-/* ADD-TO-CART QUANTITY CONTROLS */
+/* ===============================================
+   ADD-TO-CART QUANTITY CONTROLS
+=============================================== */
 
 .card-cart-action {
   display: flex;
@@ -478,7 +494,9 @@ select.input {
   margin: 15px 0;
 }
 
-/* SHOPPING CART PAGE */
+/* ===============================================
+   SHOPPING CART PAGE
+=============================================== */
 
 .cart-layout {
   display: grid;
@@ -557,7 +575,9 @@ select.input {
   text-align: center;
 }
 
-/* ORDER SUMMARY */
+/* ===============================================
+   ORDER SUMMARY
+=============================================== */
 
 .summary-card {
   padding: 24px;
@@ -599,7 +619,9 @@ select.input {
   margin-top: 20px;
 }
 
-/* EVENTS AND OFFERS */
+/* ===============================================
+   EVENTS AND OFFERS
+=============================================== */
 
 .event-spacing {
   margin-top: 25px;
@@ -646,7 +668,9 @@ select.input {
   margin: 5px 8px 5px 0;
 }
 
-/* WELCOME DIALOG */
+/* ===============================================
+   WELCOME DIALOG
+=============================================== */
 
 .welcome-dialog {
   width: min(440px, 92vw);
@@ -683,7 +707,10 @@ select.input {
   margin-top: 12px;
 }
 
-/* SIMPLE FOOTER FALLBACK */
+/* ===============================================
+   SIMPLE FOOTER FALLBACK
+   Advanced footer styles are in footer.css
+=============================================== */
 
 .site-footer {
   margin-top: 32px;
@@ -883,7 +910,9 @@ select.input {
   font-size: 0.76rem;
 }
 
-/* BENEFITS */
+/* ===============================================
+   HOMEPAGE BENEFITS
+=============================================== */
 
 .home-benefits {
   border-bottom: 1px solid var(--border);
@@ -927,7 +956,9 @@ select.input {
   line-height: 1.6;
 }
 
-/* HOMEPAGE SECTIONS */
+/* ===============================================
+   HOMEPAGE SECTIONS
+=============================================== */
 
 .home-section {
   padding-block: 85px;
@@ -954,7 +985,9 @@ select.input {
   line-height: 1.8;
 }
 
-/* CATEGORY CARDS */
+/* ===============================================
+   HOMEPAGE CATEGORY CARDS
+=============================================== */
 
 .home-category-grid {
   display: grid;
@@ -1032,7 +1065,7 @@ select.input {
 }
 
 /* ===============================================
-   FEATURED PRODUCTS — FIXED CARD LAYOUT
+   HOMEPAGE FEATURED PRODUCTS
 =============================================== */
 
 .home-products-section {
@@ -1115,9 +1148,7 @@ select.input {
   line-height: 1.7;
 }
 
-/* IMPORTANT FIX:
-   Every card has one price row
-   followed by one quantity-control row. */
+/* PRICE ABOVE THE QUANTITY CONTROLS */
 
 .home-product-grid .product-bottom {
   display: grid;
@@ -1130,8 +1161,6 @@ select.input {
   padding-top: 20px;
 }
 
-/* Price is always on its own row */
-
 .home-product-grid .product-bottom > strong {
   display: block;
   min-width: 0;
@@ -1140,7 +1169,7 @@ select.input {
   white-space: nowrap;
 }
 
-/* Quantity controls fill the card width */
+/* ADD TO CART / QUANTITY SELECTOR */
 
 .home-product-grid .card-cart-action {
   display: flex;
@@ -1150,14 +1179,10 @@ select.input {
   min-width: 0;
 }
 
-/* Full-width Add to Cart button */
-
 .home-product-grid .card-cart-action > [data-add] {
   width: 100%;
   min-height: 43px;
 }
-
-/* Full-width minus / number / plus selector */
 
 .home-product-grid .card-stepper {
   display: flex;
@@ -1176,13 +1201,13 @@ select.input {
   height: 43px;
 }
 
-/* Before JavaScript creates the quantity wrapper */
-
 .home-product-grid .product-bottom > button[data-add] {
   width: 100%;
 }
 
-/* VIEW ALL PRODUCTS */
+/* ===============================================
+   VIEW ALL PRODUCTS
+=============================================== */
 
 .home-view-all {
   display: flex;
@@ -1200,7 +1225,9 @@ select.input {
   text-underline-offset: 4px;
 }
 
-/* HOMEPAGE PROMOTION */
+/* ===============================================
+   HOMEPAGE PROMOTION
+=============================================== */
 
 .home-promotion {
   padding-block: 70px;
@@ -1235,7 +1262,9 @@ select.input {
   flex-shrink: 0;
 }
 
-/* HOMEPAGE WELCOME POPUP */
+/* ===============================================
+   HOMEPAGE WELCOME POPUP
+=============================================== */
 
 .home-welcome-dialog {
   position: relative;
@@ -1253,15 +1282,27 @@ select.input {
   background: rgba(24, 15, 10, 0.65);
 }
 
+/* FIXED COFFEE ICON — SVG */
+
 .home-dialog-icon {
-  display: grid;
-  place-items: center;
-  width: 65px;
-  height: 65px;
-  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 22px;
+  border: 1px solid #e2ccb5;
   border-radius: 50%;
-  background: #efe0cf;
-  font-size: 30px;
+  background: #f1e4d4;
+  color: #654936;
+  box-shadow: 0 5px 16px rgba(101, 73, 54, 0.08);
+}
+
+.home-dialog-icon svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .home-welcome-dialog h2 {
